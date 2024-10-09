@@ -47,20 +47,49 @@ class MyWidget extends StatelessWidget {
           IconButton(onPressed: () {}, icon: Icon(Icons.person))
         ],
       ),
-      body: Center(
-        child: Container(
-          child: Text(
-            "Welcome To My First Simple App Hello I'm Mohamed Wael Mahmoud Mobile Developer",
-            style: TextStyle(
-              height: 1.5,
-              color: Colors.black,
-              fontSize: 35,
+      body: Column(
+        children: [
+          Container(
+            child: Text(
+              "Welcome يا صديقي",
+              style: TextStyle(
+                height: 1.5,
+                color: Colors.black,
+                fontSize: 22,
+              ),
+              textDirection: TextDirection.ltr,
+              textAlign: TextAlign.center,
+            ),
+            height: 122,
+            width: 122,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              color: Colors.blueGrey,
+              shape: BoxShape.circle,
             ),
           ),
-          color: Colors.blue,
-          margin: EdgeInsets.symmetric(horizontal: 55),
-          padding: EdgeInsets.all(22),
-        ),
+          Container(
+            child: Text(
+              "Welcome يا صديقي",
+              style: TextStyle(
+                height: 1.5,
+                color: Colors.black,
+                fontSize: 22,
+              ),
+              textDirection: TextDirection.ltr,
+              textAlign: TextAlign.center,
+            ),
+            height: 122,
+            width: 122,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              color: Colors.blueGrey,
+              shape: BoxShape.circle,
+            ),
+          ),
+        ],
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
