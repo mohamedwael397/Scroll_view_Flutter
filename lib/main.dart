@@ -47,49 +47,54 @@ class MyWidget extends StatelessWidget {
           IconButton(onPressed: () {}, icon: Icon(Icons.person))
         ],
       ),
-      body: Column(
-        children: [
-          Container(
-            child: Text(
-              "Welcome يا صديقي",
-              style: TextStyle(
-                height: 1.5,
-                color: Colors.black,
-                fontSize: 22,
+      body: Align(
+        alignment: Alignment.topLeft,
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Container(
+                child: Text(
+                  "Welcome يا صديقي",
+                  style: TextStyle(
+                    height: 1.5,
+                    color: Colors.black,
+                    fontSize: 22,
+                  ),
+                  textDirection: TextDirection.ltr,
+                  textAlign: TextAlign.center,
+                ),
+                height: 122,
+                width: 122,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: Colors.blueGrey,
+                  shape: BoxShape.circle,
+                ),
               ),
-              textDirection: TextDirection.ltr,
-              textAlign: TextAlign.center,
-            ),
-            height: 122,
-            width: 122,
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              color: Colors.blueGrey,
-              shape: BoxShape.circle,
-            ),
-          ),
-          Container(
-            child: Text(
-              "Welcome يا صديقي",
-              style: TextStyle(
-                height: 1.5,
-                color: Colors.black,
-                fontSize: 22,
+              Container(
+                alignment: Alignment.center,
+                child: Text(
+                  "Welcome يا صديقي",
+                  style: TextStyle(
+                    height: 1.5,
+                    color: Colors.black,
+                    fontSize: 22,
+                  ),
+                  textDirection: TextDirection.ltr,
+                  textAlign: TextAlign.center,
+                ),
+                height: 122,
+                width: 122,
+                decoration: BoxDecoration(
+                  color: Colors.blueGrey,
+                  shape: BoxShape.circle,
+                ),
+                margin: EdgeInsets.fromLTRB(0, 1000, 0, 0),
               ),
-              textDirection: TextDirection.ltr,
-              textAlign: TextAlign.center,
-            ),
-            height: 122,
-            width: 122,
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              color: Colors.blueGrey,
-              shape: BoxShape.circle,
-            ),
+            ],
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
           ),
-        ],
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
